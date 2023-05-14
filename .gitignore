@@ -1,5 +1,8 @@
 #db.sqlite3
 
+# base files/folders
+..
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
