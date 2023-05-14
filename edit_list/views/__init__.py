@@ -1,0 +1,1 @@
+from .ShoppingListView import ShoppingListView
