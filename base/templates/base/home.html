@@ -2,6 +2,8 @@
 
 {% block main %}
 
-  <div>...HOME page placeholder...</div>
+  {% for list in lists %}
+    <div>{{ list.name }}</div>
+  {% endfor %}
 
 {% endblock %}
