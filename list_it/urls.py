@@ -20,7 +20,7 @@ from django.urls import include, path
 from base.views import HomeView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', HomeView.as_view(), name='home'),
-    path("edit/", include("edit_list.urls")),
+    path('admin', admin.site.urls),
+    path("", include("base.urls")),
+    path("edit", include("edit_list.urls")), #TODO: auslagern
 ]
