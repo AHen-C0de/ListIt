@@ -9,3 +9,6 @@ __pycache__/
 
 # symlinks
 venv-activate
+
+# other
+README_local.md
