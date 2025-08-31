@@ -1,9 +1,16 @@
 {% extends 'base/base.html' %}
+{% load static %}
 
 {% block main %}
+  <link rel="stylesheet" href="{% static 'home.css' %}">
 
-  {% for list in lists %}
-    <div>{{ list.name }}</div>
-  {% endfor %}
+  <h1 class="header">ListIt</h1>
+  <div class="home-container">
+    <div class="button-container">
+      {% for list in lists %}
+        <a href="/" class="main-button">{{ list.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
 
 {% endblock %}
