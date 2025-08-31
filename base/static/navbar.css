@@ -1,4 +1,7 @@
-.box {
+footer {
   background-color: red;
   height: 100%;
+  padding: 0.2rem;
+  background-color: var(--primary-color);
+  color: white; 
 }

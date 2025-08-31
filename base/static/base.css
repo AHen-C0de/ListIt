@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #14533d;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,12 +25,15 @@ body {
 }
 
 .header {
-  background-color: green;
+  background-color: var(--primary-color);
   padding: 0.2rem;
   text-align: center;
+  color: white; 
 }
 
 .main-button {
   border: 1px solid black;
-  width: 5rem;
+  width: 6rem;
+  background-color: var(--primary-color);
+  color: white; 
 }
