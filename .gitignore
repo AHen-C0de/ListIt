@@ -12,3 +12,4 @@ venv-activate
 
 # other
 README_local.md
+.env
