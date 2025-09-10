@@ -3,23 +3,12 @@
 
 {% block main %}
   <link rel="stylesheet" href="{% static 'base/css/home.css' %}">
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-
-
-
-
-
   <h1 class="header">ListIt</h1>
   <div class="home-container">
     <div class="button-container">
-      {% for list in lists %}
-        <a href="/" class="main-button no-link-style">{{ list.name }}</a>
-      {% endfor %}
+      <a href="/groceries" class="main-button no-link-style">Einkausliste</a>
+      <a href="/" class="main-button no-link-style">Shopping</a>
+      <a href="/" class="main-button no-link-style">ToDo</a>
     </div>
   </div>
-
 {% endblock %}

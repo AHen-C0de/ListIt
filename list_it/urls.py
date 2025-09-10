@@ -22,5 +22,5 @@ from base.views import HomeView
 urlpatterns = [
     path('admin', admin.site.urls),
     path("", include("base.urls")),
-    path("edit", include("edit_list.urls")), #TODO: auslagern
+    path("groceries", include("groceries.urls")),
 ]

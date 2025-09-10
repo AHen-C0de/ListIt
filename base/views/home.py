@@ -1,9 +1,6 @@
-#from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import TemplateView
 
 from base.models import List
 
-class HomeView(ListView):
+class HomeView(TemplateView):
     template_name='base/home.html'
-    model = List
-    context_object_name = "lists"
