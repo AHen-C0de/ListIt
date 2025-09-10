@@ -6,9 +6,9 @@
   <h1 class="header">ListIt</h1>
   <div class="home-container">
     <div class="button-container">
-      <a href="/groceries" class="main-button no-link-style">Einkausliste</a>
-      <a href="/" class="main-button no-link-style">Shopping</a>
-      <a href="/" class="main-button no-link-style">ToDo</a>
+      {% for app in apps %}
+        <a href={{ app.url }} class="main-button no-link-style">{{ app.name }}</a>
+      {% endfor %}      
     </div>
   </div>
 {% endblock %}
