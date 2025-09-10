@@ -1,0 +1,8 @@
+@import "./base.css";
+
+footer {
+  background-image: var(--primary-gradiant);  
+  height: 100%;
+  padding: 0.2rem;
+  color: white; 
+}
