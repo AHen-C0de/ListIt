@@ -3,7 +3,10 @@
     height: 100%;
 }
 
-.list {
+.paper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     margin: auto;
     background-color: #f8f88a;
     height: 70%;
@@ -11,8 +14,13 @@
     padding: 2rem;
 }
 
-.bullets {
+#list {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.finished {
+    color: grey;
+    text-decoration: line-through;
 }

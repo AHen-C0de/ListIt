@@ -3,15 +3,19 @@
 
 {% block main %}
   <link rel="stylesheet" href="{% static 'groceries/groceries.css' %}">
+  <script src="{% static 'groceries/groceries.js' %}"></script>
+
   <h1 class="header">Einkausliste</h1>
   <div class="page">
-    <div class="list">
-      <div class="bullets">
+    <div class="paper">
+      <ul id="list">
         {% for item in items %}
-          <p href="/">{{ item.name }}</p>
+          <li
+            href="/"
+            class="active"
+          >{{ item.name }}</li>
         {% endfor %}
-      </div>
+      </ul>
     </div>
   </div>
-
 {% endblock %}
