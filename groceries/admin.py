@@ -1,3 +1,13 @@
 from django.contrib import admin
 
-# Register your models here.
+from base.models import Item, List
+
+
+@admin.register(List)
+class ListAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Item)
+class ItemAdmin(admin.ModelAdmin):
+    pass

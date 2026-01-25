@@ -4,11 +4,13 @@
 {% block main %}
   <link rel="stylesheet" href="{% static 'groceries/groceries.css' %}">
   <h1 class="header">Einkausliste</h1>
-  <div>
-    <div>
-      {% for item in items %}
-        <p href="/">{{ item.name }}</p>
-      {% endfor %}
+  <div class="page">
+    <div class="list">
+      <div class="bullets">
+        {% for item in items %}
+          <p href="/">{{ item.name }}</p>
+        {% endfor %}
+      </div>
     </div>
   </div>
 
