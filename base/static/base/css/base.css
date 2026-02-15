@@ -39,6 +39,10 @@ body {
   grid-template-rows: 1fr 4rem;
 }
 
+button {
+  border: none;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;

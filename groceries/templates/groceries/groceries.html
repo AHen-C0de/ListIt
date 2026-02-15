@@ -7,6 +7,11 @@
 
   <h1 class="header">Einkausliste</h1>
   <div class="page">
+    <div class="button-container">
+      <button class="grocery-icon-button">
+        <i class="fa-solid fa-square-plus grocery-icon"></i>
+      </button>
+    </div>    
     <div class="paper">
       <ul id="list">
         {% for item in items %}
@@ -17,8 +22,10 @@
         {% endfor %}
       </ul>
     </div>
-    <button>
-      <i class="fa-solid fa-square-plus"></i>
-    </button>
+    <div class="button-container">
+      <button class="grocery-icon-button">
+        <i class="fa-solid fa-pencil grocery-icon"></i>
+      </button>
+    </div>
   </div>
 {% endblock %}
