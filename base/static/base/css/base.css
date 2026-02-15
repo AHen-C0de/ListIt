@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Playwrite IN';
   src: local('Playwrite IN'),
-    url('../fonts/PlaywriteIN/PlaywriteIN-VariableFont_wght.ttf') format("truetype");
+    url('/static/libs/fonts/PlaywriteIN/PlaywriteIN-VariableFont_wght.ttf') format("truetype");
 }
 @font-face {
   font-family: 'Comfortaa';
   src: local('Comfortaa'),
-    url('../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf') format("truetype");
+    url('/static/libs/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf') format("truetype");
 }
 
 

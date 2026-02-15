@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-from base.models import Item, List
+from base.models import List
+from groceries.models import Item
 
 
 @admin.register(List)

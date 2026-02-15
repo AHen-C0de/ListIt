@@ -1,15 +1,8 @@
-#db.sqlite3
-
-# base files/folders
-..
-
-# Byte-compiled / optimized / DLL files
 __pycache__/
+.env
+.vscode
 *.py[cod]
-
-# symlinks
+README_local.md
 venv-activate
 
-# other
-README_local.md
-.env
+#db.sqlite3

@@ -1,8 +1,11 @@
 from django.views.generic import ListView
 
-from base.models import Item
+from groceries.models import Item
 
 class GroceriesView(ListView):
     template_name='groceries/groceries.html'
     model = Item
     context_object_name = "items"
+
+    def get_queryset(self):
+        return Item.objects.filter(is_selected=True)
