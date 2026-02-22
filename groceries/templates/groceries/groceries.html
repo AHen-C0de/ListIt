@@ -4,10 +4,11 @@
 {% block main %}
 <link rel="stylesheet" href="{% static 'groceries/groceries.css' %}">
 <script src="{% static 'groceries/groceries.js' %}"></script>
+<script src="{% static 'groceries/list_edit.js' %}"></script>
 
 <h1 class="header">Einkausliste</h1>
 <div style="position: relative; height: 100%"> {% comment %} modal anchor point {% endcomment %}
-  <div id="modal__background">
+  <div id="modal-background">
     <div id="modal"></div>
   </div>
   <div class="page">
@@ -25,7 +26,7 @@
       </ul>
     </div>
     <div class="button-container">
-      {% include 'groceries/buttons/icon_button.html' with icon_classes="fa-solid fa-pencil" %}
+      {% include 'groceries/buttons/icon_button.html' with icon_classes="fa-solid fa-pencil" on_click="openListEdit()" %}
     </div>
   </div>
 </div>

@@ -75,15 +75,13 @@ button {
   text-decoration: none;
 }
 
-#modal__background {
+#modal-background {
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: 1000;
   backdrop-filter: blur(2px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 #modal {
@@ -92,4 +90,5 @@ button {
   background-color: white;
   border: 2px black solid;
   border-radius: 0.3rem;
+  margin: auto;
 }
