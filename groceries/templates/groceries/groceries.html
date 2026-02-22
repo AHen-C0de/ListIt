@@ -2,10 +2,14 @@
 {% load static %}
 
 {% block main %}
-  <link rel="stylesheet" href="{% static 'groceries/groceries.css' %}">
-  <script src="{% static 'groceries/groceries.js' %}"></script>
+<link rel="stylesheet" href="{% static 'groceries/groceries.css' %}">
+<script src="{% static 'groceries/groceries.js' %}"></script>
 
-  <h1 class="header">Einkausliste</h1>
+<h1 class="header">Einkausliste</h1>
+<div style="position: relative; height: 100%"> {% comment %} modal anchor point {% endcomment %}
+  <div id="modal__background">
+    <div id="modal"></div>
+  </div>
   <div class="page">
     <div class="button-container">
       {% include 'groceries/buttons/icon_button.html' with icon_classes="fa-solid fa-square-plus" %}
@@ -24,4 +28,5 @@
       {% include 'groceries/buttons/icon_button.html' with icon_classes="fa-solid fa-pencil" %}
     </div>
   </div>
+</div>
 {% endblock %}

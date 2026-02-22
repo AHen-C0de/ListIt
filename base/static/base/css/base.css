@@ -74,3 +74,22 @@ button {
 .no-link-style {
   text-decoration: none;
 }
+
+#modal__background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal {
+  height: 300px; /* only for testing */
+  width: 80%; /* only for testing */
+  background-color: white;
+  border: 2px black solid;
+  border-radius: 0.3rem;
+}
