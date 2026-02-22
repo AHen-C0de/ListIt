@@ -8,9 +8,7 @@
   <h1 class="header">Einkausliste</h1>
   <div class="page">
     <div class="button-container">
-      <button class="grocery-icon-button">
-        <i class="fa-solid fa-square-plus grocery-icon"></i>
-      </button>
+      {% include 'groceries/buttons/icon_button.html' with icon_classes="fa-solid fa-square-plus" %}
     </div>    
     <div class="paper">
       <ul id="list">
@@ -23,9 +21,7 @@
       </ul>
     </div>
     <div class="button-container">
-      <button class="grocery-icon-button">
-        <i class="fa-solid fa-pencil grocery-icon"></i>
-      </button>
+      {% include 'groceries/buttons/icon_button.html' with icon_classes="fa-solid fa-pencil" %}
     </div>
   </div>
 {% endblock %}
