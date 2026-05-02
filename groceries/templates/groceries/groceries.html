@@ -33,7 +33,8 @@
 
 <template id="edit-template">
     <div class="center-middle">
-        <input>
+        {% url "groceries:items-list" as url %}
+        <input x-url={{ url }}>
     </div>
 </template>
 {% endblock %}
