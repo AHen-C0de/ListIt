@@ -29,9 +29,10 @@
 </div>
 
 <template id="edit-template">
-    <div class="center-middle">
+    <div class="center-middle flex-column">
         {% url "groceries:items-list" as url %}
         <input x-url={{ url }}>
+        <div id="item-options" class="flex-column"></div>
     </div>
 </template>
 {% endblock %}

@@ -11,9 +11,21 @@ function openListEdit() {
 
 function getGroceries(e) {
     let $input = $(e.target);
+    $itemContainer = $("#item-options");
+
+    $itemContainer.empty(); // rm currently rendered item buttons
+    if ($input.val() === "") { return; } // no data -> no request
+
     $.ajax({
         type: "GET",
         url: $input.attr("x-url"),
-        data: {search: $input.value.trim()}, //* param-name must align to expected one from SearchFilter class in viewset
+        // param-name must align to expected one from SearchFilter class in viewset
+        data: {search: $input.val().trim()},
+        success: (data) => { // create items buttons from data
+            for (item of data) {
+                $itemButton = $(`<button>${item.name}</button>`) //TODO: .click()
+                $itemContainer.append($itemButton);
+            };
+        }
     });
 }
