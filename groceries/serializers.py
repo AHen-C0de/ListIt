@@ -8,3 +8,4 @@ class ItemSerializer(ModelSerializer):
     class Meta:
         model = Item
         fields = ("id", "name",)
+        read_only_fields = ("id",)

@@ -23,9 +23,27 @@ function getGroceries(e) {
         data: {search: $input.val().trim()},
         success: (data) => { // create items buttons from data
             for (item of data) {
-                $itemButton = $(`<button>${item.name}</button>`) //TODO: .click()
+                $itemButton = $(`<button>${item.name}</button>`).click(e => setItemOnList(e, item));
                 $itemContainer.append($itemButton);
             };
         }
     });
+}
+
+function setItemOnList(e, item) {
+    let storingInput = $("#select_item_url")
+    const urlTemplate = storingInput.val()
+    const url = urlTemplate.replace(storingInput.attr("x-pkPlaceholder"), item.id);
+    // $.ajax({
+    //     type: "POST",
+    //     url: $input.attr("x-url"),
+    //     // param-name must align to expected one from SearchFilter class in viewset
+    //     data: {search: $input.val().trim()},
+    //     success: (data) => { // create items buttons from data
+    //         for (item of data) {
+    //             $itemButton = $(`<button>${item.name}</button>`) //TODO: .click()
+    //             $itemContainer.append($itemButton);
+    //         };
+    //     }
+    // });
 }
